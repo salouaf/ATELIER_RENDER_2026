@@ -32,7 +32,10 @@ resource "render_web_service" "flask_app" {
 env_vars = {
   ENV = {
     value = "production"
-  }
+  },
+"DATABASE_URL" = {
+      value = "postgresql://ma_bdd_flask_user:Ntgv30SCLvPErlFLvNDI1MvxfxD861Vl@dpg-d76hnj4r85hc73bl6up0-a/ma_bdd_flask"
+    }
 }
 }
 
