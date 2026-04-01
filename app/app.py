@@ -21,6 +21,10 @@ def info():
         "version": "v1"
     }
 
+@app.route("/env")
+def env():
+    return {"env": os.getenv("ENV")}
+
 
 
 if __name__ == "__main__":
